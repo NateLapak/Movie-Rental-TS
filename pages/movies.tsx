@@ -1,10 +1,11 @@
 import Navbar from "../Components/Navbar"
+import MovieOne from "../Components/Moviespage/MoviesOne"
 
 const movies = () => {
     return (
         <div>
             <Navbar />
-            <h1>Hello world</h1>
+            <MovieOne />
         </div>
     )
 }
