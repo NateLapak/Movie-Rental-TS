@@ -1,8 +1,13 @@
-import { GetServerSideProps, InferGetServerSidePropsType } from 'next'
+import { GetServerSideProps} from 'next'
 import { useEffect, useState } from 'react'
 import Movies from "../../pages/api/movies"
 
 const trendingEndpoint = "https://api.themoviedb.org/3/trending/all/day?api_key="
+
+// Render getServerSideProps each time the components are rendered
+// useEffect(() => {
+//     getServerSideProps();
+// })
 
 export async function getServerSideProps() {
     const res = await fetch(trendingEndpoint + process.env.API_KEY);
@@ -17,8 +22,7 @@ export async function getServerSideProps() {
 
 // Creates an object with pre-predefined values
 const FirstHome = ({movies}) => {
-    console.log(movies)
-    // Fetch external movie data from movies api
+
     return (
         <div>
             <h1 className="text-4xl text-center py-10">Movie rental system</h1>
