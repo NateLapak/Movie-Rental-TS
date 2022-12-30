@@ -1,7 +1,7 @@
 const baseUrl = "http://image.tmdb.org/t/p/w500"
 
 const Movies = ({trending, highest, upcoming}) => {
-    console.log(trending)
+
     return (
         <div className="text-center container mx-auto">
             <h2 className="text-4xl py-10">Movie list</h2>
@@ -87,7 +87,7 @@ const Movies = ({trending, highest, upcoming}) => {
                 <div className="flex justify-center py-20">
                     {upcoming.results.slice(0,3).map(result => {
                         return (
-                            <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm mx-20">
+                            <div key={result.id} className="block p-6 rounded-lg shadow-lg bg-white max-w-sm mx-20">
                                 <img className="p-0" src={baseUrl + result.poster_path}></img>
                                 <h2 className="text-gray-900 text-xl leading-tight font-medium mb-2 text-center">{result.title ?? result.original_title}</h2>
                                 <h4 className="text-gray-900 text-l text-center">{result.release_date ?? result.first_air_date}</h4>
