@@ -43,7 +43,10 @@ const Movies = ({trending, highest, upcoming}) => {
                                     <p className="float-right">{result.vote_count}</p>
                                 </div>
 
-                                <button type="button" className="container mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-5">Rent</button>
+                                <div>
+                                    <form action="/api/movies" method="POST" id="movieForm"></form>
+                                    <button form="movieForm" type="submit" className="container mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-5">Rent</button>
+                                </div>
                             </div>
                         )
                     })}
@@ -75,7 +78,10 @@ const Movies = ({trending, highest, upcoming}) => {
                                     <p className="float-right">{result.vote_count}</p>
                                 </div>
 
-                                <button type="button" className="container mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-5">Rent</button>
+                                <div>
+                                    <form action="/api/movies" method="POST" id="movieForm"></form>
+                                    <button form="movieForm" type="submit" className="container mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-5">Rent</button>
+                                </div>
                             </div>
                         )
                     })}
@@ -107,7 +113,10 @@ const Movies = ({trending, highest, upcoming}) => {
                                     <p className="float-right">{result.vote_count}</p>
                                 </div>
 
-                                <button type="button" className="container mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-5">Rent</button>
+                                <div>
+                                    <form action="/api/movies" method="POST" id="movieForm"></form>
+                                    <button form="movieForm" type="submit" className="container mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-5">Rent</button>
+                                </div>
                             </div>
                         )
                     })}
