@@ -1,5 +1,9 @@
 const baseUrl = "http://image.tmdb.org/t/p/w500"
 
+const toasterRender = () => {
+
+}
+
 const Movies = ({trending, highest, upcoming}) => {
 
     return (
@@ -45,7 +49,7 @@ const Movies = ({trending, highest, upcoming}) => {
 
                                 <div>
                                     <form action="/api/movies" method="POST" id="movieForm"></form>
-                                    <button form="movieForm" type="submit" className="container mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-5">Rent</button>
+                                    <button onSubmit = {toasterRender} form="movieForm" type="submit" className="container mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-5">Rent</button>
                                 </div>
                             </div>
                         )
@@ -80,7 +84,7 @@ const Movies = ({trending, highest, upcoming}) => {
 
                                 <div>
                                     <form action="/api/movies" method="POST" id="movieForm"></form>
-                                    <button form="movieForm" type="submit" className="container mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-5">Rent</button>
+                                    <button onSubmit = {toasterRender} form="movieForm" type="submit" className="container mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-5">Rent</button>
                                 </div>
                             </div>
                         )
@@ -115,7 +119,7 @@ const Movies = ({trending, highest, upcoming}) => {
 
                                 <div>
                                     <form action="/api/movies" method="POST" id="movieForm"></form>
-                                    <button form="movieForm" type="submit" className="container mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-5">Rent</button>
+                                    <button onSubmit = {toasterRender} form="movieForm" type="submit" className="container mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-5">Rent</button>
                                 </div>
                             </div>
                         )
