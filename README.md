@@ -9,7 +9,7 @@ Run npm start to run the website
 
 ----------------------------------------------------------------------------------------------------------------------
 ## About
-This project uses NextJS and TailwindCSS to make a movie rental system web application. This is a continuation of the hackathon project and is basically the hackathon project with all the implements that we set out to finish. The theme: It's not a bug, it's a feature has been removed as well.
+This project uses NextJS and TailwindCSS to make a movie rental system web application. This is a continuation of the hackathon project and is basically the hackathon project with all the implements that we set out to finish. The theme: "It's not a bug, it's a feature" has been removed as well.
 Still need some updates before production.
 
 ## Deployment
